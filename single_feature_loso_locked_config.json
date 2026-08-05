@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "datasetFile": "capgmyo_ml_dataset.mat",
+  "datasetSha256": "8F84902F12B4E0D1C3F47D2D536E4257379D3F6C5179E4F68B54A139F006F719",
+  "expectedDimensions": {"rows": 27360, "predictors": 2688, "features": 21, "subjects": 18, "classes": 8, "predictorsPerFeature": 128},
+  "seedFormula": "base + 100*featureNumber + heldSubject",
+  "models": {
+    "lda": {"seedBase": 71000, "discrimType": "pseudoLinear", "prior": "uniform", "compute": "cpu"},
+    "mlp": {"seedBase": 61000, "layerSizes": [64, 32], "activations": "relu", "lambda": 0.0001, "iterationLimit": 300, "standardize": true, "prior": "uniform", "gpuProbe": true},
+    "rbf_svm": {"seedBase": 51000, "kernelFunction": "gaussian", "kernelScale": "auto", "boxConstraint": 1, "solver": "SMO", "standardize": true, "coding": "onevsone", "prior": "uniform", "preferredWorkers": 6, "gpuProbe": true}
+  }
+}

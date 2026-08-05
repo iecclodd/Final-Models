@@ -1,0 +1,2 @@
+Compute mode: gpu
+Detail: smoke candidate

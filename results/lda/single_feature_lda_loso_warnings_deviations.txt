@@ -1,0 +1,2 @@
+Compute mode: cpu
+Detail: smoke candidate

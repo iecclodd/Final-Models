@@ -1,0 +1,6 @@
+Scientific limitations: no compatible Random Forest finals; no compatible within-user artifacts; upstream feature/windowing/filter/normalization provenance unknown; LOSO does not establish within-user performance or retention.
+Compute fallback: none. LDA ran on CPU by design; exact MLP and RBF-SVM gpuArray paths passed and ran on the NVIDIA GeForce RTX 4060 Ti.
+Runtime warning: the permitted one-fold-per-model benchmark underestimated feature-dependent RBF-SVM training cost; final per-fold timing matrices supersede it.
+Pre-production corrections: isolated smoke attempts exposed a Java-buffer hash defect, an extensionless source-hash path, and partial-scope table/report dimension/name defects. These attempts stopped before production and did not alter production progress.
+Post-production correction: all 1,134 folds and three final MAT files completed before the original comparison handoff failed because a no-output function was assigned. The call was corrected and comparison generation was rerun without rerunning any model.
+Environment warning: the MATLAB trial license reported that it expires in 4 days.
