@@ -1,0 +1,24 @@
+# Participant data and MATLAB run state must stay local.
+capgmyo_ml_dataset.mat
+*.mat
+*_progress.mat*
+*.archive_*
+*.bak*
+*.log
+
+# Generated execution directories.
+single_feature_*_loso_results/
+single_feature_cross_model_comparison/
+single_feature_loso_smoke_tests/
+single_feature_loso_runtime_benchmark/
+logs/
+pipeline_lock.json*
+run_status.json
+RUN_STATUS.md
+generated_output_inventory.csv
+
+# Local configuration and editor files.
+.env
+.env.*
+*.asv
+*~
