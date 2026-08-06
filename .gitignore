@@ -1,6 +1,7 @@
 # Participant data and MATLAB run state must stay local.
 capgmyo_ml_dataset.mat
 *.mat
+!models/recovery/**/*.mat
 *_progress.mat*
 *.archive_*
 *.bak*
